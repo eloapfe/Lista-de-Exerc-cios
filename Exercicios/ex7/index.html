@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios - Retângulos Coloridos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            margin: 0;
+        }
+
+        .container {
+            width: 600px; /* Largura do contêiner principal */
+            height: 400px; /* Altura do contêiner principal */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top, .bottom {
+            background-color: #ff77d2; /* Cor do topo e da base */
+            height: 50px; /* Altura do topo e da base */
+        }
+
+        .middle {
+            display: flex;
+            flex: 1; /* Preenche o espaço restante */
+        }
+
+        .left {
+            background-color: #ff27db; /* Cor da coluna esquerda */
+            width: 30%; /* Largura da coluna esquerda */
+        }
+
+        .right {
+            background-color: #ffb3ea; /* Cor da coluna direita */
+            width: 70%; /* Largura da coluna direita */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Desktop</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('image.png'); /* Utilizando a imagem fornecida como fundo */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.7); /* Barra superior semi-transparente */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-left, .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-left img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .navbar-left span, .navbar-right span {
+            margin: 0 10px;
+            color: #333;
+        }
+
+        .dock {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(200, 200, 200, 0.8); /* Dock semi-transparente */
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .dock img {
+            width: 50px;
+            height: 50px;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="apple-logo.png" alt="Apple Logo">
+            <span>Finder</span>
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Go</span>
+        </div>
+        <div class="navbar-right">
+            <span>29/06/2021 09:27</span>
+        </div>
+    </div>
+
+    <div class="dock">
+        <img src="chrome-icon.png" alt="Chrome">
+        <img src="vscode-icon.png" alt="VSCode">
+        <img src="word-icon.png" alt="Word">
+        <img src="messages-icon.png" alt="Messages">
+    </div>
+</body>
+</html>

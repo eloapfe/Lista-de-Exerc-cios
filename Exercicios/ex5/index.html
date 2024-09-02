@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios - Círculos Coloridos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            width: 200px;
+            height: 250px;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        /* Estilos dos círculos */
+        .circle.red1 { background-color: rgb(255, 151, 250); top: 0; left: 0; }
+        .circle.green1 { background-color: rgb(176, 255, 176); top: 60px; left: 0; }
+        .circle.blue1 { background-color: rgb(215, 104, 255); top: 120px; left: 0; }
+        .circle.red2 { background-color: rgb(255, 151, 250); top: 180px; left: 0; }
+        .circle.green2 { background-color:  rgb(176, 255, 176); top: 180px; left: 60px; }
+        .circle.blue2 { background-color:  rgb(215, 104, 255); top: 180px; left: 120px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle red1"></div>
+        <div class="circle green1"></div>
+        <div class="circle blue1"></div>
+        <div class="circle red2"></div>
+        <div class="circle green2"></div>
+        <div class="circle blue2"></div>
+    </div>
+</body>
+</html>

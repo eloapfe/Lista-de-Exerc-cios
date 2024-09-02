@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeira com Três Listras</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .stripe {
+            flex: 1;
+            width: 100%;
+        }
+        .stripe:nth-child(1) {
+            background-color: #e582f0; /* Cor da primeira listra (laranja) */
+        }
+        .stripe:nth-child(2) {
+            background-color: #78ccf0; /* Cor da segunda listra (azul) */
+        }
+        .stripe:nth-child(3) {
+            background-color: #f98acc; /* Cor da terceira listra (verde) */
+        }
+    </style>
+</head>
+<body>
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+
+    <nav>
+        <a href="index.html">Ir para Página 1</a> |
+        <a href="pagina2.html">Ir para Página 2</a> |
+        <a href="bandeira_vertical.html">Ir para Bandeira Vertical</a>
+    </nav>
+</body>
+</html>
